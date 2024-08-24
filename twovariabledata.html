@@ -1,0 +1,2817 @@
+<html>
+
+<head>
+        		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-5PRRFTJ9K1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-5PRRFTJ9K1');
+		</script>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+		  body {
+			  width: 70%; 
+			  margin: 0 auto; /* Center align the body */
+		  }
+		</style>
+		<title>Unit 2 - Exploring Two-Variable Data</title>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Mangal;
+	panose-1:2 4 5 3 5 2 3 3 2 2;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Aptos;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:.25in;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:20.0pt;
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:8.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;
+	font-weight:normal;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:8.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Aptos",sans-serif;
+	color:#0F4761;
+	font-weight:normal;}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin-top:4.0pt;
+	margin-right:0in;
+	margin-bottom:2.0pt;
+	margin-left:0in;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;
+	color:#0F4761;
+	font-weight:normal;
+	font-style:italic;}
+h5
+	{mso-style-link:"Heading 5 Char";
+	margin-top:4.0pt;
+	margin-right:0in;
+	margin-bottom:2.0pt;
+	margin-left:0in;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;
+	color:#0F4761;
+	font-weight:normal;}
+h6
+	{mso-style-link:"Heading 6 Char";
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;
+	color:#595959;
+	font-weight:normal;
+	font-style:italic;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-link:"Heading 7 Char";
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;
+	color:#595959;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-link:"Heading 8 Char";
+	margin:0in;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;
+	color:#272727;
+	font-style:italic;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-link:"Heading 9 Char";
+	margin:0in;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;
+	color:#272727;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Title Char";
+	margin:0in;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Title Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-link:"Subtitle Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:14.0pt;
+	font-family:"Aptos",sans-serif;
+	color:#595959;
+	letter-spacing:.75pt;}
+a:link, span.MsoHyperlink
+	{color:#467886;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#96607D;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoQuote, li.MsoQuote, div.MsoQuote
+	{mso-style-link:"Quote Char";
+	margin-top:8.0pt;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	text-align:center;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;
+	color:#404040;
+	font-style:italic;}
+p.MsoIntenseQuote, li.MsoIntenseQuote, div.MsoIntenseQuote
+	{mso-style-link:"Intense Quote Char";
+	margin-top:.25in;
+	margin-right:.6in;
+	margin-bottom:.25in;
+	margin-left:.6in;
+	text-align:center;
+	line-height:107%;
+	border:none;
+	padding:0in;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;
+	color:#0F4761;
+	font-style:italic;}
+span.MsoIntenseEmphasis
+	{color:#0F4761;
+	font-style:italic;}
+span.MsoIntenseReference
+	{font-variant:small-caps;
+	color:#0F4761;
+	letter-spacing:.25pt;
+	font-weight:bold;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	color:#0F4761;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	font-family:"Times New Roman",serif;
+	color:#0F4761;
+	font-style:italic;}
+span.Heading5Char
+	{mso-style-name:"Heading 5 Char";
+	mso-style-link:"Heading 5";
+	font-family:"Times New Roman",serif;
+	color:#0F4761;}
+span.Heading6Char
+	{mso-style-name:"Heading 6 Char";
+	mso-style-link:"Heading 6";
+	font-family:"Times New Roman",serif;
+	color:#595959;
+	font-style:italic;}
+span.Heading7Char
+	{mso-style-name:"Heading 7 Char";
+	mso-style-link:"Heading 7";
+	font-family:"Times New Roman",serif;
+	color:#595959;}
+span.Heading8Char
+	{mso-style-name:"Heading 8 Char";
+	mso-style-link:"Heading 8";
+	font-family:"Times New Roman",serif;
+	color:#272727;
+	font-style:italic;}
+span.Heading9Char
+	{mso-style-name:"Heading 9 Char";
+	mso-style-link:"Heading 9";
+	font-family:"Times New Roman",serif;
+	color:#272727;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+span.SubtitleChar
+	{mso-style-name:"Subtitle Char";
+	mso-style-link:Subtitle;
+	font-family:"Times New Roman",serif;
+	color:#595959;
+	letter-spacing:.75pt;}
+span.QuoteChar
+	{mso-style-name:"Quote Char";
+	mso-style-link:Quote;
+	color:#404040;
+	font-style:italic;}
+span.IntenseQuoteChar
+	{mso-style-name:"Intense Quote Char";
+	mso-style-link:"Intense Quote";
+	color:#0F4761;
+	font-style:italic;}
+.MsoChpDefault
+	{font-size:11.0pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link="#467886" vlink="#96607D" style='word-wrap:break-word'>
+	<div id="header"></div>
+<div class=WordSection1>
+
+<h1><b><span style='font-size:28.0pt;line-height:107%;font-family:"Aptos",sans-serif'>Unit
+2 - Exploring Two-Variable Data</span></b></h1>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b><a href="#_TOPIC_2.1_Introducing">Topic 2.1 Introducing
+Statistics: Are Variables Related?</a></b></p>
+
+<p class=MsoNormal><b><a href="#_TOPIC_2.2_Representing">Topic 2.2 Representing
+Two Categorical Variables</a></b></p>
+
+<p class=MsoNormal><b><a href="#_TOPIC_2.3_Statistics">Topic 2.3 Statistics for
+Two Categorical Variables</a></b></p>
+
+<p class=MsoNormal><b><a href="#_TOPIC_2.4_Representing">Topic 2.4 Representing
+the Relationship Between Two Quantitative Variables</a></b></p>
+
+<p class=MsoNormal><b><a href="#_TOPIC_2.5_Correlation">Topic 2.5 Correlation</a></b></p>
+
+<p class=MsoNormal><b><span style='font-size:10.0pt;line-height:107%'><a
+href="#_TOPIC_2.6_Linear">Topic<span style='font-size:11.0pt;line-height:107%'>
+2.6 Linear Regression Models</span></a></span></b></p>
+
+<p class=MsoNormal><b><a href="#_TOPIC_2.7_Residuals">Topic 2.7 Residuals</a></b></p>
+
+<p class=MsoNormal><b><a href="#_TOPIC_2.8_Least">Topic 2.8 Least Squares Regression</a></b></p>
+
+<p class=MsoNormal><b><a href="#_TOPIC_2.9_Analyzing">Topic 2.9 Analyzing
+Departures from Linearity</a></b></p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<h2><a name="_TOPIC_2.1_Introducing"></a><b><span style='font-size:20.0pt;
+line-height:107%;font-family:"Aptos",sans-serif'>TOPIC 2.1 Introducing
+Statistics: Are Variables Related?</span></b></h2>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>1.
+Understanding Variation: Random or Not?</span></b></p>
+
+<p class=MsoNormal><b>Explanation</b></p>
+
+<p class=MsoNormal>In statistics, variation refers to the differences or
+changes in data. For example, if we measure the height of all students in a
+class, we will notice that not everyone is the same height there s variation.
+This variation can be <b>random</b> (due to chance) or <b>not random</b> (due
+to a specific cause). Understanding whether variation is random or not helps us
+determine if the results we see are reliable or just happened by chance.</p>
+
+<p class=MsoNormal><b>Data Example</b></p>
+
+<p class=MsoNormal>Imagine we roll a die 10 times and record the results:</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal>Roll 1: 3</li>
+ <li class=MsoNormal>Roll 2: 5</li>
+ <li class=MsoNormal>Roll 3: 2</li>
+ <li class=MsoNormal>Roll 4: 6</li>
+ <li class=MsoNormal>Roll 5: 1</li>
+ <li class=MsoNormal>Roll 6: 4</li>
+ <li class=MsoNormal>Roll 7: 3</li>
+ <li class=MsoNormal>Roll 8: 6</li>
+ <li class=MsoNormal>Roll 9: 2</li>
+ <li class=MsoNormal>Roll 10: 5</li>
+</ul>
+
+<p class=MsoNormal>These results show variation because the numbers are
+different. This variation is random because each roll of the die is independent
+of the others and is due to chance.</p>
+
+<p class=MsoNormal><b>Real-World Example</b></p>
+
+<p class=MsoNormal>Imagine a teacher notices that students who sit in the front
+row tend to get better grades. The teacher might wonder if this is due to
+something about sitting in the front (not random) or if it s just by chance
+(random).</p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>2.
+Patterns and Associations: Random or Not?</span></b></p>
+
+<p class=MsoNormal><b>Explanation</b></p>
+
+<p class=MsoNormal>When we look at data, we might see patterns or associations,
+like a trend or relationship between two variables. However, it s essential to
+determine whether these patterns are meaningful (not random) or if they
+occurred by chance (random). Just because we see a pattern doesn t mean there s
+a real relationship.</p>
+
+<p class=MsoNormal><b>Data Example</b></p>
+
+<p class=MsoNormal>Let s consider the heights and shoe sizes of a group of
+students:</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal>Student 1: Height = 65 inches, Shoe Size = 9</li>
+ <li class=MsoNormal>Student 2: Height = 70 inches, Shoe Size = 11</li>
+ <li class=MsoNormal>Student 3: Height = 67 inches, Shoe Size = 10</li>
+ <li class=MsoNormal>Student 4: Height = 72 inches, Shoe Size = 12</li>
+ <li class=MsoNormal>Student 5: Height = 66 inches, Shoe Size = 9.5</li>
+</ul>
+
+<p class=MsoNormal>If we plot this data on a graph, we might see a pattern
+suggesting that taller students tend to have bigger shoe sizes. But is this
+pattern meaningful, or could it be random?</p>
+
+<p class=MsoNormal><b>Graph</b></p>
+
+<p class=MsoNormal><i>Graph showing the relationship between height and shoe
+size</i></p>
+
+<p class=MsoNormal><img border=0 width=523 height=411
+src="twovariabledata_files/image001.png"
+alt="Relationship between Height and Shoe Size"></p>
+
+<p class=MsoNormal><b>Real-World Example</b></p>
+
+<p class=MsoNormal>A researcher observes that people who drink more coffee tend
+to have higher energy levels. However, this pattern might be random, or there
+could be another explanation, like people with naturally higher energy levels
+preferring coffee.</p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>3.
+Identifying Questions: Possible Relationships in Data</span></b></p>
+
+<p class=MsoNormal><b>Explanation</b></p>
+
+<p class=MsoNormal>To analyze data effectively, we need to ask the right
+questions about possible relationships between variables. These questions guide
+our investigation and help us determine if what we observe is significant or
+just a coincidence.</p>
+
+<p class=MsoNormal><b>Example Questions</b></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal>Is there a relationship between the number of hours
+     studied and exam scores?</li>
+ <li class=MsoNormal>Does the amount of exercise correlate with better sleep
+     quality?</li>
+ <li class=MsoNormal>Is there an association between social media use and
+     stress levels?</li>
+</ul>
+
+<p class=MsoNormal><b>Real-World Example</b></p>
+
+<p class=MsoNormal>Suppose a school wants to know if there s a relationship
+between students  attendance and their grades. They might ask,  Does better
+attendance lead to higher grades?  By asking this question, they can analyze
+the data to see if there s a meaningful relationship.</p>
+
+<p class=MsoNormal><b>Free Response Problem</b></p>
+
+<p class=MsoNormal><b>Question:</b> A company wants to know if there s a
+relationship between the number of advertisements they run and the number of
+products they sell. Over ten weeks, they recorded the following data:</p>
+
+<table class=MsoNormalTable border=0 cellspacing=3 cellpadding=0>
+ <thead>
+  <tr>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Week</b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Number of Ads</b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Products Sold</b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>1</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>5</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>100</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>2</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>10</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>150</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>3</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>7</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>120</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>4</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>8</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>130</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>5</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>6</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>110</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>6</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>12</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>160</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>7</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>9</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>140</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>8</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>11</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>155</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>9</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>4</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>90</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>10</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>13</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>170</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><b>Task:</b></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal>Plot the data on a graph.</li>
+ <li class=MsoNormal>Determine if there is a pattern or association between the
+     number of ads and the number of products sold.</li>
+ <li class=MsoNormal>Is this relationship likely to be random or not? Explain
+     your reasoning.</li>
+</ul>
+
+<p class=MsoNormal><b>Answer Guide</b></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal>Students should plot the number of ads on the x-axis and
+     the number of products sold on the y-axis.</li>
+ <li class=MsoNormal>They should look for a pattern, such as an increasing
+     trend.</li>
+ <li class=MsoNormal>Students should discuss whether this pattern suggests a
+     real relationship or could be due to random variation.</li>
+</ul>
+
+<p class=MsoNormal>This reading material should help you understand how to
+analyze data and recognize whether the patterns you see are meaningful or just
+random!</p>
+
+<p class=MsoNormal><a name="_TOPIC_2.2_Representing"></a>&nbsp;</p>
+
+<h2><b><span style='font-size:20.0pt;line-height:107%;font-family:"Aptos",sans-serif'>TOPIC
+2.2 Representing Two Categorical Variables</span></b></h2>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>Understanding
+Two Categorical Variables</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>1.
+Comparing Numerical and Graphical Representations</span></b></p>
+
+<p class=MsoNormal>When working with two categorical variables, it's important
+to understand how to compare them using both numerical and graphical
+representations. Categorical variables are those that represent categories or
+groups, like &quot;Gender&quot; (Male, Female) or &quot;Favorite Color&quot;
+(Red, Blue, Green).</p>
+
+<p class=MsoNormal><b>Numerical Representation</b>: This is often done using a <b>two-way
+table</b> (or contingency table). This table shows how often different
+combinations of the categories occur. For example, if we survey 100 students
+about their gender and favorite color, a two-way table can summarize the
+responses.</p>
+
+<p class=MsoNormal><b>Example</b>:</p>
+
+<table class=MsoNormalTable border=0 cellspacing=3 cellpadding=0>
+ <thead>
+  <tr>
+   <td style='padding:.75pt .75pt .75pt .75pt'></td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Red</b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Blue</b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Green</b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Total</b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Male</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>15</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>10</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>5</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>30</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Female</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>20</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>25</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>25</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>70</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b>Total</b></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>35</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>35</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>30</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>100</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><b>Graphical Representation</b>: To visualize the
+relationship between these two variables, we can use graphs such as <b>side-by-side
+bar graphs</b>, <b>segmented bar graphs</b>, or <b>mosaic plots</b>. Each of
+these graphs provides a way to visually compare the distributions of the
+categories.</p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>2. Types
+of Graphical Representations</span></b></p>
+
+<p class=MsoNormal>Let s dive into the three main types of graphical
+representations used for two categorical variables:</p>
+
+<p class=MsoNormal><b>a) Side-by-Side Bar Graphs</b></p>
+
+<p class=MsoNormal>In a side-by-side bar graph, bars for one categorical
+variable are placed next to each other, grouped by the categories of another
+variable.</p>
+
+<p class=MsoNormal><b>Example</b>: A side-by-side bar graph showing gender and
+favorite color might look like this:</p>
+
+<p class=MsoNormal><img border=0 width=429 height=345 id="Picture 3"
+src="twovariabledata_files/image002.jpg"
+alt="A graph with blue and orange bars&#10;&#10;Description automatically generated"></p>
+
+<p class=MsoNormal><b>b) Segmented Bar Graphs</b></p>
+
+<p class=MsoNormal>In a segmented bar graph, each bar represents one category
+of a variable and is divided into segments that represent the categories of the
+second variable.</p>
+
+<p class=MsoNormal><b>Example</b>: A segmented bar graph for gender and
+favorite color:</p>
+
+<p class=MsoNormal><img border=0 width=429 height=340 id="Picture 4"
+src="twovariabledata_files/image003.png" alt="Segmented Bar Graph"></p>
+
+<p class=MsoNormal><b>c) Mosaic Plots</b></p>
+
+<p class=MsoNormal>A mosaic plot is a graphical representation where the size
+of each rectangle is proportional to the frequency or relative frequency of
+that combination of categories.</p>
+
+<p class=MsoNormal><b>Example</b>: A mosaic plot for gender and favorite color:</p>
+
+<p class=MsoNormal><img border=0 width=432 height=331 id="Picture 5"
+src="twovariabledata_files/image004.png"
+alt="A mosaic plot of genders&#10;&#10;Description automatically generated"></p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>3.
+Comparing Distributions and Determining Associations</span></b></p>
+
+<p class=MsoNormal>These graphical representations help us compare the
+distributions of two categorical variables and determine if there is an
+association between them.</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal><b>Comparing Distributions</b>: By looking at the bar
+     heights or rectangle sizes in the graphs, we can see if one category is
+     more common in one group than another.</li>
+ <li class=MsoNormal><b>Determining Associations</b>: If the distribution of
+     one variable changes significantly depending on the category of the other
+     variable, it suggests that the two variables may be associated.</li>
+</ul>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>4.
+Two-Way Tables (Contingency Tables)</span></b></p>
+
+<p class=MsoNormal>A <b>two-way table</b> is a simple but powerful tool to
+summarize two categorical variables. The cells in the table can show frequency
+counts or <b>relative frequencies</b> (proportions).</p>
+
+<p class=MsoNormal><b>Example</b>: In the two-way table shown earlier, the cell
+for  Male, Red  shows a frequency of 15. If we wanted the relative frequency,
+we'd divide 15 by the total number of students (100), giving us 0.15.</p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>5. Joint
+Relative Frequency</span></b></p>
+
+<p class=MsoNormal>The <b>joint relative frequency</b> is found by dividing the
+frequency in a cell by the total number of observations. It tells us how often
+a particular combination of categories occurs.</p>
+
+<p class=MsoNormal><b>Example</b>: For the &quot;Male, Red&quot; category, the
+joint relative frequency is 15/100 = 0.15 or 15%.</p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>Real-World
+Example</span></b></p>
+
+<p class=MsoNormal><b>School Clubs and Sports Participation</b>: Suppose we
+want to see if there is an association between students participating in school
+clubs and playing sports. We survey 200 students and create the following
+two-way table:</p>
+
+<table class=MsoNormalTable border=0 cellspacing=3 cellpadding=0>
+ <thead>
+  <tr>
+   <td style='padding:.75pt .75pt .75pt .75pt'></td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Plays Sports</b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Does Not Play Sports</b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Total</b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>In a Club</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>60</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>40</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>100</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Not in a Club</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>20</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>80</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>100</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b>Total</b></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>80</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>120</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>200</p>
+  </td>
+ </tr>
+</table>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal><b>Side-by-Side Bar Graph</b>: Shows the number of
+     students in each group.</li>
+ <li class=MsoNormal><b>Segmented Bar Graph</b>: Could show the proportion of
+     students playing sports within each club participation category.</li>
+ <li class=MsoNormal><b>Mosaic Plot</b>: Would show the relationship between
+     club participation and sports playing in terms of area size.</li>
+</ul>
+
+<p class=MsoNormal>These graphs help us see if being in a club is associated
+with playing sports.</p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>Free
+Response Problem</span></b></p>
+
+<p class=MsoNormal><b>Problem</b>: A survey of 150 students asks about their
+favorite type of movie (Action, Comedy, Drama) and whether they prefer watching
+movies at home or in theaters. The data is summarized below:</p>
+
+<table class=MsoNormalTable border=0 cellspacing=3 cellpadding=0>
+ <thead>
+  <tr>
+   <td style='padding:.75pt .75pt .75pt .75pt'></td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Action</b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Comedy</b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Drama</b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Total</b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Watch at Home</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>30</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>20</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>10</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>60</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Watch in Theaters</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>20</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>40</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>30</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>90</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b>Total</b></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>50</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>60</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>40</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>150</p>
+  </td>
+ </tr>
+</table>
+
+<ol style='margin-top:0in' start=1 type=1>
+ <li class=MsoNormal><b>Create a side-by-side bar graph</b> for the data.</li>
+ <li class=MsoNormal><b>Calculate the joint relative frequency</b> for students
+     who prefer watching Action movies at home.</li>
+ <li class=MsoNormal><b>Discuss whether there is an association</b> between the
+     type of movie and where students prefer to watch movies.</li>
+</ol>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p class=MsoNormal>This reading material should give you a strong understanding
+of how to represent and analyze two categorical variables. Practice using these
+tools and graphs to strengthen your statistical skills!</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name="_TOPIC_2.3_Statistics"></a><b><span style='font-size:20.0pt;
+line-height:107%;font-family:"Aptos",sans-serif'>TOPIC 2.3 Statistics for Two
+Categorical Variables</span></b></h2>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>1.
+Introduction to Two Categorical Variables</span></b></p>
+
+<p class=MsoNormal>In statistics, we often collect data that falls into
+different categories. When we study two categorical variables simultaneously,
+we can use a two-way table to organize and analyze the data. This allows us to
+observe patterns and relationships between the two variables.</p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>2.
+Calculating Statistics for Two Categorical Variables</span></b></p>
+
+<p class=MsoNormal>Let's start by understanding how to calculate basic
+statistics from a two-way table. A two-way table displays data that classifies
+individuals by two categorical variables.</p>
+
+<p class=MsoNormal><b>Example:</b><br>
+Suppose we survey 100 students about their preferred study method (Group Study
+or Individual Study) and their grade level (Underclassmen or Upperclassmen).
+Here is the data:</p>
+
+<table class=MsoNormalTable border=0 cellspacing=3 cellpadding=0>
+ <thead>
+  <tr>
+   <td style='padding:.75pt .75pt .75pt .75pt'></td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Group Study</b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Individual Study</b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Total</b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b>Underclassmen</b></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>20</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>30</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>50</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b>Upperclassmen</b></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>15</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>35</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>50</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b>Total</b></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>35</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>65</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>100</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>3.
+Marginal Relative Frequencies</span></b></p>
+
+<p class=MsoNormal>Marginal relative frequencies represent the proportion of
+individuals that fall into each category for one variable, without considering
+the other variable. They are calculated by dividing the row or column totals by
+the overall total.</p>
+
+<p class=MsoNormal><img border=0 width=414 height=209
+src="twovariabledata_files/image005.png"
+alt="A table with numbers and symbols&#10;&#10;Description automatically generated with medium confidence"></p>
+
+<p class=MsoNormal>This tells us that 35% of students prefer group study, while
+65% prefer individual study. Similarly, 50% of the surveyed students are
+underclassmen, and 50% are upperclassmen.</p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>4.
+Conditional Relative Frequencies</span></b></p>
+
+<p class=MsoNormal>Conditional relative frequencies focus on a specific
+subgroup of the data. It s calculated by dividing the frequency of a cell by
+the total of its row or column.</p>
+
+<p class=MsoNormal><img border=0 width=591 height=174
+src="twovariabledata_files/image006.png"
+alt="A white background with black text&#10;&#10;Description automatically generated"></p>
+
+<p class=MsoNormal>These calculations help us understand the relationship
+between the variables.</p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>5.
+Comparing Statistics for Two Categorical Variables</span></b></p>
+
+<p class=MsoNormal>To compare statistics for two categorical variables, we
+analyze the marginal and conditional relative frequencies. For instance, by
+comparing the preferences for study methods between underclassmen and
+upperclassmen, we can see if there's an association between grade level and
+study preference.</p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>6.
+Real-World Example: Voting Preferences</span></b></p>
+
+<p class=MsoNormal>Imagine we want to understand voting preferences in a town
+based on age. We survey 200 people and ask them whether they prefer Candidate A
+or Candidate B. We also note whether they are under 30 or 30 and older.</p>
+
+<table class=MsoNormalTable border=0 cellspacing=3 cellpadding=0>
+ <thead>
+  <tr>
+   <td style='padding:.75pt .75pt .75pt .75pt'></td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Candidate A</b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Candidate B</b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Total</b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b>Under 30</b></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>60</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>40</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>100</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b>30 and Up</b></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>50</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>50</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>100</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b>Total</b></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>110</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>90</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>200</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><b><img border=0 width=444 height=181
+src="twovariabledata_files/image007.png"
+alt="A screenshot of a math test&#10;&#10;Description automatically generated"></b></p>
+
+<p class=MsoNormal>This shows that younger voters are more likely to prefer
+Candidate A compared to older voters.</p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>7.
+Graphical Representation</span></b></p>
+
+<p class=MsoNormal>Let s visualize the data from our student survey:</p>
+
+<p class=MsoNormal><img border=0 width=499 height=405 id="Picture 6"
+src="twovariabledata_files/image008.png"
+alt="A graph of blue and orange bars&#10;&#10;Description automatically generated"></p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>8. Free
+Response Problem</span></b></p>
+
+<p class=MsoNormal><b>Problem:</b><br>
+A company wants to understand whether employees' job satisfaction is related to
+their department. The company surveys 150 employees, recording whether they are
+satisfied or not, and whether they work in the Sales or Marketing department.</p>
+
+<table class=MsoNormalTable border=0 cellspacing=3 cellpadding=0>
+ <thead>
+  <tr>
+   <td style='padding:.75pt .75pt .75pt .75pt'></td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Satisfied</b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Not Satisfied</b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Total</b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b>Sales</b></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>40</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>35</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>75</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b>Marketing</b></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>30</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>45</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>75</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b>Total</b></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>70</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>80</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>150</p>
+  </td>
+ </tr>
+</table>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal><b>Questions:</b></li>
+ <ol style='margin-top:0in' start=1 type=1>
+  <li class=MsoNormal>Calculate the marginal relative frequencies for job
+      satisfaction.</li>
+  <li class=MsoNormal>Calculate the conditional relative frequency of being
+      satisfied among Sales employees.</li>
+  <li class=MsoNormal>Compare the job satisfaction between Sales and Marketing
+      departments.</li>
+  <li class=MsoNormal>What can you conclude about the association between job
+      satisfaction and department?</li>
+ </ol>
+</ul>
+
+<p class=MsoNormal><b>Answer these questions and summarize your findings in a
+few sentences.</b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoListParagraph style='margin-left:.25in'>&nbsp;</p>
+
+<h2><a name="_TOPIC_2.4_Representing"></a><b><span style='font-size:20.0pt;
+line-height:107%;font-family:"Aptos",sans-serif'>TOPIC 2.4 Representing the
+Relationship Between Two Quantitative Variables</span></b></h2>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>1. What
+is Bivariate Quantitative Data?</span></b></p>
+
+<p class=MsoNormal><b>Bivariate quantitative data</b> involves observing two
+different quantitative variables for each individual in a sample or population.
+For example, imagine you collect data on the number of hours students study and
+their corresponding scores on a test. Here, &quot;hours studied&quot; and
+&quot;test scores&quot; are the two quantitative variables.</p>
+
+<p class=MsoNormal><b>Data Example:</b></p>
+
+<p class=MsoNormal>Let's consider a small dataset where we observe the hours
+studied and test scores for five students:</p>
+
+<table class=MsoNormalTable border=0 cellspacing=3 cellpadding=0>
+ <thead>
+  <tr>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Student</b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Hours Studied</b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Test Score (%)</b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>1</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>2</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>70</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>2</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>4</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>75</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>3</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>6</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>85</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>4</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>8</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>90</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>5</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>10</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>95</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>Here, &quot;Hours Studied&quot; is one variable, and
+&quot;Test Score&quot; is another. Together, they form a bivariate dataset.</p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>2. What
+is a Scatterplot?</span></b></p>
+
+<p class=MsoNormal>A <b>scatterplot</b> is a graph that represents bivariate
+data. Each point on the scatterplot corresponds to an observation in the
+dataset, with the x-axis representing one variable and the y-axis representing
+the other.</p>
+
+<p class=MsoNormal><b>Example:</b></p>
+
+<p class=MsoNormal>Using the data from our previous example, we can plot a
+scatterplot where &quot;Hours Studied&quot; is on the x-axis and &quot;Test
+Score&quot; is on the y-axis.</p>
+
+<p class=MsoNormal><img border=0 width=465 height=374 id="Picture 7"
+src="twovariabledata_files/image009.png"
+alt="Scatterplot of Hours Studied vs Test Score"></p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>3. Explanatory
+and Response Variables</span></b></p>
+
+<p class=MsoNormal>In a bivariate dataset, we often try to understand how one
+variable affects another. The <b>explanatory variable</b> (or independent
+variable) is the variable we use to explain or predict the other variable. The <b>response
+variable</b> (or dependent variable) is the one that we are trying to predict
+or explain.</p>
+
+<p class=MsoNormal><b>Example:</b></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal><b>Explanatory Variable</b>: Hours Studied</li>
+ <li class=MsoNormal><b>Response Variable</b>: Test Score</li>
+</ul>
+
+<p class=MsoNormal>In our example, we might want to see if the number of hours
+studied (explanatory variable) can help predict a student's test score
+(response variable).</p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>4. Characteristics
+of a Scatterplot</span></b></p>
+
+<p class=MsoNormal>When analyzing a scatterplot, we look for the following
+characteristics:</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal><b>Form</b>: Is the relationship linear (points roughly
+     form a straight line) or non-linear?</li>
+ <li class=MsoNormal><b>Direction</b>: Does the relationship have a positive
+     direction (as one variable increases, so does the other) or a negative
+     direction (as one variable increases, the other decreases)?</li>
+ <li class=MsoNormal><b>Strength</b>: How closely do the points follow a
+     specific pattern? Is the association strong, moderate, or weak?</li>
+ <li class=MsoNormal><b>Unusual Features</b>: Are there any outliers (points
+     that don't fit the pattern) or clusters?</li>
+</ul>
+
+<p class=MsoNormal><b>Example Analysis:</b></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal><b>Form</b>: The scatterplot shows a linear relationship.</li>
+ <li class=MsoNormal><b>Direction</b>: The relationship is positive, meaning as
+     &quot;Hours Studied&quot; increases, &quot;Test Score&quot; also
+     increases.</li>
+ <li class=MsoNormal><b>Strength</b>: The points are closely clustered around a
+     straight line, indicating a strong relationship.</li>
+ <li class=MsoNormal><b>Unusual Features</b>: No outliers are observed in this
+     scatterplot.</li>
+</ul>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>Regression
+Models and Predictions</span></b></p>
+
+<p class=MsoNormal style='line-height:normal'><b><span style='font-size:12.0pt'>Regression
+models</span></b><span style='font-size:12.0pt'> are tools that help us
+understand and predict the relationship between two quantitative variables. By
+using these models, we can make predictions about the response variable based
+on changes in the explanatory variable.</span></p>
+
+<p class=MsoNormal style='line-height:normal'><b><span style='font-size:12.0pt'>Key
+Points:</span></b></p>
+
+<ol start=1 type=1>
+ <li class=MsoNormal style='line-height:normal'><b><span style='font-size:12.0pt'>Purpose
+     of Regression Models:</span></b></li>
+ <ul type=circle>
+  <li class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>Regression
+      models estimate the relationship between an explanatory variable and a
+      response variable.</span></li>
+  <li class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>They
+      provide a way to predict the value of the response variable for a given
+      value of the explanatory variable.</span></li>
+ </ul>
+ <li class=MsoNormal style='line-height:normal'><b><span style='font-size:12.0pt'>Simple
+     Linear Regression:</span></b></li>
+</ol>
+
+<p class=MsoNormal style='margin-left:.5in;line-height:normal'><span
+style='font-size:12.0pt'><img border=0 width=495 height=251
+src="twovariabledata_files/image010.png"
+alt="A white paper with black text&#10;&#10;Description automatically generated"></span></p>
+
+<ol start=3 type=1>
+ <li class=MsoNormal style='line-height:normal'><b><span style='font-size:12.0pt'>Making
+     Predictions:</span></b></li>
+</ol>
+
+<p class=MsoNormal style='margin-left:.5in;line-height:normal'><span
+style='font-size:12.0pt'><img border=0 width=631 height=181
+src="twovariabledata_files/image011.png"
+alt="A math equation on a white background&#10;&#10;Description automatically generated"></span></p>
+
+<ol start=4 type=1>
+ <li class=MsoNormal style='line-height:normal'><b><span style='font-size:12.0pt'>Interpreting
+     the Slope and Intercept:</span></b></li>
+ <ul type=circle>
+  <li class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>The
+      <b>slope (b)</b> indicates how much the response variable is expected to
+      change with a one-unit change in the explanatory variable.</span></li>
+  <li class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>The
+      <b>intercept (a)</b> represents the expected value of the response
+      variable when the explanatory variable is zero.</span></li>
+ </ul>
+ <li class=MsoNormal style='line-height:normal'><b><span style='font-size:12.0pt'>Limitations
+     and Assumptions:</span></b></li>
+ <ul type=circle>
+  <li class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>The
+      regression model assumes a linear relationship between the explanatory
+      and response variables.</span></li>
+  <li class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>Predictions
+      are most accurate within the range of the observed data. Extrapolation
+      (predicting beyond the observed range) can be less reliable.</span></li>
+ </ul>
+</ol>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>5. Real-World
+Example:</span></b></p>
+
+<p class=MsoNormal>Let's consider a real-world scenario where a researcher
+wants to explore the relationship between the number of hours people exercise
+per week and their cholesterol levels. The researcher gathers data from 100
+individuals and creates a scatterplot.</p>
+
+<p class=MsoNormal>In the scatterplot, the x-axis represents the hours of
+exercise, and the y-axis represents cholesterol levels. If the scatterplot
+shows a negative direction, it might suggest that as people exercise more,
+their cholesterol levels tend to decrease, indicating a potential negative
+association between these two variables.</p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>6. Free-Response
+Problem:</span></b></p>
+
+<p class=MsoNormal><b>Problem:</b><br>
+A teacher gathers data on the number of hours students spend on homework each
+week and their corresponding GPA. The data for 10 students is as follows:</p>
+
+<table class=MsoNormalTable border=0 cellspacing=3 cellpadding=0>
+ <thead>
+  <tr>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Student</b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Hours of Homework</b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>GPA</b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>1</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>3</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>2.5</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>2</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>5</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>3.0</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>3</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>7</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>3.5</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>4</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>4</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>3.0</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>5</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>6</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>3.2</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>6</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>8</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>3.7</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>7</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>2</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>2.2</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>8</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>9</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>3.8</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>9</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>10</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>4.0</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>10</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>1</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>2.0</p>
+  </td>
+ </tr>
+</table>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal><b>a.</b> Construct a scatterplot for this data with
+     &quot;Hours of Homework&quot; on the x-axis and &quot;GPA&quot; on the
+     y-axis.</li>
+ <li class=MsoNormal><b>b.</b> Describe the form, direction, strength, and any
+     unusual features of the scatterplot.</li>
+ <li class=MsoNormal><b>c.</b> Based on the scatterplot, what conclusions can
+     you draw about the relationship between hours spent on homework and GPA?</li>
+</ul>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p class=MsoNormal>This material provides a foundation for understanding how to
+represent and interpret the relationship between two quantitative variables
+using scatterplots. Use the data and real-world examples to guide your
+understanding, and try solving the free-response problem to practice your
+skills!</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:.25in'>&nbsp;</p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:.25in'>&nbsp;</p>
+
+<h2><a name="_TOPIC_2.5_Correlation"></a><b><span style='font-size:20.0pt;
+line-height:107%;font-family:"Aptos",sans-serif'>TOPIC 2.5 Correlation</span></b></h2>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>Introduction
+</span></b></p>
+
+<p class=MsoNormal>In statistics, correlation is a measure that describes the
+relationship between two quantitative variables. When we study how one variable
+changes in relation to another, we often look at the correlation to understand
+the strength and direction of this relationship. In this reading material, we
+will explore how correlation is calculated, how to interpret it, and some
+important considerations when using correlation in data analysis.</p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>1.
+Regression Models and Predicting Responses</span></b></p>
+
+<p class=MsoNormal>A regression model helps us predict the value of one
+variable (the response variable) based on the value of another variable (the
+explanatory variable). For example, if we have data on students  study hours
+and their test scores, we might use a regression model to predict a student s
+test score based on how many hours they studied.</p>
+
+<p class=MsoNormal><b>Data Example:</b> Imagine you have the following data:</p>
+
+<table class=MsoNormalTable border=0 cellspacing=3 cellpadding=0>
+ <thead>
+  <tr>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Study Hours</b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Test Score</b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>2</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>70</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>4</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>80</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>6</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>90</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>8</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>95</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>A regression model might show that for every additional hour
+of study, the test score increases by a certain amount. This allows us to make
+predictions about future test scores based on study hours.</p>
+
+<p class=MsoNormal><b>Real-World Example:</b> Consider the relationship between
+the temperature outside and the sales of ice cream. A regression model could
+predict ice cream sales based on the temperature. As the temperature increases,
+ice cream sales might also increase, showing a positive relationship.</p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>2.
+Determining Correlation for a Linear Relationship</span></b></p>
+
+<p class=MsoNormal>Correlation quantifies the strength and direction of the
+linear relationship between two variables. The correlation coefficient, denoted
+as <b>r</b>, ranges from -1 to 1.</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal><b>r &gt; 0</b>: Positive correlation (as one variable
+     increases, the other also increases).</li>
+ <li class=MsoNormal><b>r &lt; 0</b>: Negative correlation (as one variable
+     increases, the other decreases).</li>
+ <li class=MsoNormal><b>r = 0</b>: No linear correlation.</li>
+</ul>
+
+<p class=MsoNormal><b>Graph Example:</b> Let's create a scatterplot with two
+variables: study hours and test scores.</p>
+
+<p class=MsoNormal><img border=0 width=399 height=321 id="Picture 8"
+src="twovariabledata_files/image012.png" alt="Study Hours vs Test Score"></p>
+
+<p class=MsoNormal>The scatterplot shows a positive linear relationship,
+meaning that as study hours increase, test scores tend to increase as well.</p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>3.
+Understanding the Correlation Coefficient (r)</span></b></p>
+
+<p class=MsoNormal>The correlation coefficient <b>r</b> tells us two things:</p>
+
+<ol style='margin-top:0in' start=1 type=1>
+ <li class=MsoNormal><b>Direction</b>: Whether the relationship is positive or
+     negative.</li>
+ <li class=MsoNormal><b>Strength</b>: How strong the relationship is (how close
+     the points are to a straight line).</li>
+</ol>
+
+<p class=MsoNormal><b>Example:</b></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal><b>r = 0.9</b>: Strong positive correlation.</li>
+ <li class=MsoNormal><b>r = -0.8</b>: Strong negative correlation.</li>
+ <li class=MsoNormal><b>r = 0.2</b>: Weak positive correlation.</li>
+</ul>
+
+<p class=MsoNormal>The closer <b>r</b> is to 1 or -1, the stronger the
+relationship. However, it s important to remember that a high correlation does
+not mean one variable causes the other to change.</p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>4.
+Calculating the Correlation Coefficient</span></b></p>
+
+<p class=MsoNormal>While the formula for calculating <b>r</b> involves some
+complex calculations, most often, we use technology (like a calculator or
+software) to find it. The formula is:</p>
+
+<p class=MsoNormal><img border=0 width=188 height=57
+src="twovariabledata_files/image013.png"
+alt="A mathematical equation with numbers&#10;&#10;Description automatically generated with medium confidence"></p>
+
+<p class=MsoNormal><img border=0 width=382 height=53
+src="twovariabledata_files/image014.png"
+alt="A black text on a white background&#10;&#10;Description automatically generated"></p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>5.
+Interpreting the Correlation Coefficient</span></b></p>
+
+<p class=MsoNormal>When interpreting <b>r</b>, consider the following:</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal><b>r = 1</b> or <b>r = -1</b>: Perfect linear
+     relationship.</li>
+ <li class=MsoNormal><b>r = 0</b>: No linear relationship.</li>
+ <li class=MsoNormal>A strong correlation does not mean that a linear model is
+     the best fit for the data. Always plot the data to check the shape of the
+     relationship.</li>
+</ul>
+
+<p class=MsoNormal><b>Example:</b> Suppose <b>r = 0.95</b> for study hours and
+test scores. This indicates a strong positive relationship, meaning that
+generally, students who study more tend to have higher test scores.</p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>6.
+Correlation vs. Causation</span></b></p>
+
+<p class=MsoNormal>A key concept in statistics is that correlation does not
+imply causation. Just because two variables are correlated does not mean that
+one causes the other to change.</p>
+
+<p class=MsoNormal><b>Example:</b> Imagine a study shows a correlation between
+ice cream sales and drowning incidents. This does not mean that buying ice
+cream causes drowning. Instead, a third variable (like hot weather) might cause
+both to increase.</p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p class=MsoNormal><b>Free Response Problem</b></p>
+
+<p class=MsoNormal><b>Problem:</b><br>
+A researcher collected data on the number of hours spent exercising per week
+and the cholesterol levels of a group of adults. The correlation coefficient
+between the two variables was found to be <b>r = -0.85</b>.</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal><b>a.</b> Describe the direction and strength of the
+     relationship between exercise and cholesterol levels.</li>
+ <li class=MsoNormal><b>b.</b> Does this correlation imply that more exercise
+     causes lower cholesterol levels? Explain your reasoning.</li>
+ <li class=MsoNormal><b>c.</b> If the researcher finds that the relationship is
+     non-linear, what should they do?</li>
+</ul>
+
+<p class=MsoNormal><b>Solution:</b></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal><b>a.</b> The correlation is negative and strong,
+     suggesting that as the number of hours spent exercising increases,
+     cholesterol levels tend to decrease.</li>
+ <li class=MsoNormal><b>b.</b> No, this correlation does not imply causation.
+     Other factors could contribute to lower cholesterol levels.</li>
+ <li class=MsoNormal><b>c.</b> If the relationship is non-linear, the
+     researcher should consider a different model, such as a quadratic or
+     exponential model, to better fit the data.</li>
+</ul>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p class=MsoNormal><b>Conclusion</b> Understanding correlation helps us explore
+and interpret relationships between variables. However, always remember the
+limitations of correlation and the importance of looking beyond the numbers to
+the context of the data.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name="_TOPIC_2.6_Linear"></a><b><span style='font-size:20.0pt;
+line-height:107%;font-family:"Aptos",sans-serif'>TOPIC 2.6 Linear Regression Models</span></b></h2>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>1.
+Understanding Linear Regression Models</span></b></p>
+
+<p class=MsoNormal>A <b>linear regression model</b> helps us predict the value
+of a response variable y based on the value of an explanatory variable x. The
+relationship between x and y is modeled by a straight line, called the
+regression line. This line shows how changes in x are associated with changes
+in y.</p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>2. The
+Regression Equation</span></b></p>
+
+<p class=MsoNormal style='margin-left:.25in'><img border=0 width=610
+height=340 src="twovariabledata_files/image015.png"
+alt="A math problem with equations&#10;&#10;Description automatically generated with medium confidence"></p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>3.
+Calculating a Predicted Response Value</span></b></p>
+
+<p class=MsoNormal><img border=0 width=675 height=212
+src="twovariabledata_files/image016.png"
+alt="A math problem with numbers and equations&#10;&#10;Description automatically generated with medium confidence"></p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>4.
+Real-World Example: Predicting House Prices</span></b></p>
+
+<p class=MsoNormal><img border=0 width=696 height=369
+src="twovariabledata_files/image017.png"
+alt="A math equations on a white background&#10;&#10;Description automatically generated"></p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>5.
+Understanding Extrapolation</span></b></p>
+
+<p class=MsoNormal><b>Extrapolation</b> involves using the regression model to
+predict y for an x-value that is outside the range of data used to create the
+model. This can be risky because the further we go beyond the data we have, the
+less reliable the prediction becomes.</p>
+
+<p class=MsoNormal><b>Example</b>: If the house size data you collected ranges
+from 1,000 to 3,000 square feet, predicting the price for a 5,000-square-foot
+house using the same equation could lead to an unreliable estimate. The
+relationship might not hold true for such a large house.</p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>6.
+Visualizing the Concept</span></b></p>
+
+<p class=MsoNormal>Below is a graph of a simple linear regression model with a
+regression line:</p>
+
+<p class=MsoNormal><img border=0 width=437 height=352 id="Picture 9"
+src="twovariabledata_files/image018.png" alt="Simple Linear Regression"></p>
+
+<h2><a name="_TOPIC_2.7_Residuals"></a><b><span style='font-size:20.0pt;
+line-height:107%;font-family:"Aptos",sans-serif'>TOPIC 2.7 Residuals</span></b></h2>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>What Are
+Residuals?</span></b></p>
+
+<p class=MsoNormal>In statistics, a <i>residual</i> is the difference between
+an actual observed value (y) and a predicted value (y^\hat{y}y^<span
+style='font-family:"Arial",sans-serif'>&#8203;</span>) based on a regression
+model. Residuals help us understand how well our model fits the data. The
+formula for calculating a residual is:</p>
+
+<p class=MsoNormal style='margin-left:.5in'><img border=0 width=159 height=29
+src="twovariabledata_files/image019.png"></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal><b>Example:</b> If a student scores 85 on a test (actual
+     value, y) and the predicted score based on study hours was 90 (y^\hat{y}y^<span
+     style='font-family:"Arial",sans-serif'>&#8203;</span>), the residual would
+     be:</li>
+</ul>
+
+<p class=MsoNormal>Residual=85&#8722;90=&#8722;5</p>
+
+<p class=MsoNormal>This means the student scored 5 points lower than predicted.</p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>Residual
+Plots</span></b></p>
+
+<p class=MsoNormal>A <i>residual plot</i> is a graph that shows residuals on
+the vertical axis and another variable (either the explanatory variable or the
+predicted response values) on the horizontal axis. Residual plots are a
+valuable tool for evaluating the fit of a regression model.</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal><b>Example:</b> Suppose we have a regression model
+     predicting students' test scores based on the number of study hours. We
+     can create a residual plot to see if the model is appropriate.</li>
+</ul>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>Interpreting
+Residual Plots</span></b></p>
+
+<ol style='margin-top:0in' start=1 type=1>
+ <li class=MsoNormal><b>Apparent Randomness:</b></li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal>If the residuals in the plot are scattered randomly
+      around the horizontal axis (with no discernible pattern), it suggests
+      that the model is a good fit for the data. This randomness indicates that
+      the errors (or residuals) are equally spread out, confirming that a
+      linear model is appropriate.</li>
+ </ul>
+ <li class=MsoNormal><b>Patterns in Residuals:</b></li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal>If you see a pattern (such as a curve or clusters) in the
+      residual plot, this suggests that the model may not be appropriate.
+      Patterns can indicate that a linear model does not capture the
+      relationship between the variables adequately, and a different model
+      might be needed.</li>
+ </ul>
+</ol>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>Real-World
+Example: Predicting House Prices</span></b></p>
+
+<p class=MsoNormal>Let s say a real estate analyst is using the size of a house
+(in square feet) to predict its price. After building a linear regression
+model, the analyst calculates the residuals for each house in the dataset.</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal><b>Residual Plot:</b> The analyst then creates a residual
+     plot with the size of the house on the x-axis and the residuals on the
+     y-axis. If the residual plot shows a random scatter of points, the linear
+     model is appropriate. However, if there's a pattern (e.g., a curved trend),
+     the analyst might consider a different model, like a quadratic or
+     exponential model.</li>
+</ul>
+
+<p class=MsoNormal>Here s a sample residual plot for better understanding:</p>
+
+<p class=MsoNormal><img border=0 width=606 height=445 id="Picture 11"
+src="twovariabledata_files/image020.png"
+alt="A graph with blue dots&#10;&#10;Description automatically generated"></p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>Using
+Residual Plots to Evaluate Model Appropriateness</span></b></p>
+
+<p class=MsoNormal>Residual plots help you decide if your chosen model is the
+best one for the data. If the residuals are random, your model is likely
+appropriate. If there s a pattern, you might need to explore different models.</p>
+
+<p class=MsoNormal><b>Free Response Problem:</b></p>
+
+<p class=MsoNormal>A company uses the number of years of experience to predict
+the salary of its employees. After fitting a linear regression model, they
+obtain the following data for three employees:</p>
+
+<table class=MsoNormalTable border=0 cellspacing=3 cellpadding=0>
+ <thead>
+  <tr>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Employee</b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Years of Experience (XXX)</b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Actual Salary (yyy)</b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Predicted Salary (y^\hat{y}y^</b><b><span
+   style='font-family:"Arial",sans-serif'>&#8203;</span>)</b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Residual (y&#8722;y^y - \hat{y}y&#8722;y^</b><b><span
+   style='font-family:"Arial",sans-serif'>&#8203;</span>)</b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>1</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>2</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>$50,000</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>$52,000</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'></td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>2</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>5</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>$70,000</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>$68,000</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'></td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>3</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>10</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>$100,000</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>$98,000</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'></td>
+ </tr>
+</table>
+
+<ol style='margin-top:0in' start=1 type=1>
+ <li class=MsoNormal>Calculate the residuals for each employee.</li>
+ <li class=MsoNormal>Create a residual plot by plotting the residuals against
+     the years of experience.</li>
+ <li class=MsoNormal>Interpret the residual plot. Does it suggest that the
+     linear model is appropriate? Why or why not?</li>
+</ol>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p class=MsoNormal>This reading material provides a clear and simple
+understanding of residuals, engaging students with explanations, examples, and
+a problem to solve.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name="_TOPIC_2.8_Least"></a><b><span style='font-size:20.0pt;line-height:
+107%;font-family:"Aptos",sans-serif'>TOPIC 2.8 Least Squares Regression</span></b></h2>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>Introduction</span></b></p>
+
+<p class=MsoNormal>In statistics, one of the most powerful tools we use to
+understand the relationship between two quantitative variables is the <i>least-squares
+regression line</i>. This line allows us to make predictions and understand how
+changes in one variable might affect another. Let's break down the key concepts
+of least-squares regression in a simple, engaging way.</p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>1.
+Estimating Parameters for the Least-Squares Regression Line Model</span></b></p>
+
+<p class=MsoNormal>When we have two variables, say x (explanatory variable) and
+y (response variable), we often want to find the line that best fits the data
+points on a scatterplot. This line is called the <i>least-squares regression
+line</i>.</p>
+
+<p class=MsoNormal>The parameters of this line include the <i>slope</i> and the
+<i>y-intercept</i>. These parameters help us understand how much y changes for
+a given change in x, and where the line crosses the y-axis.</p>
+
+<p class=MsoNormal><b>Data Example:</b> Suppose we have data on the number of
+hours studied (x) and the scores on a test (y) for a group of students. We want
+to find the line that best predicts the test score based on hours studied.</p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>2. The
+Least-Squares Regression Model Minimizes the Sum of the Squares of the
+Residuals</span></b></p>
+
+<p class=MsoNormal>The least-squares regression line is special because it
+minimizes the sum of the squares of the <i>residuals</i>. A <i>residual</i> is
+the difference between the observed value (y) and the predicted value (&#375;)
+from the regression line. By squaring these differences and adding them up, we
+get a value that the regression model tries to minimize.</p>
+
+<p class=MsoNormal>This line also passes through the point (x&#772;, &#563;),
+where x&#772; is the mean of the x-values and &#563; is the mean of the
+y-values.</p>
+
+<p class=MsoNormal><b><img border=0 width=502 height=408
+src="twovariabledata_files/image021.png"
+alt="A graph with a red line and blue dots&#10;&#10;Description automatically generated"></b></p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>3.
+Calculating the Slope (b) of the Regression Line</span></b></p>
+
+<p class=MsoNormal><img border=0 width=677 height=261
+src="twovariabledata_files/image022.png"
+alt="A white paper with black text and black text&#10;&#10;Description automatically generated"></p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>4.
+Interpretation of the y-Intercept (a)</span></b></p>
+
+<p class=MsoNormal><img border=0 width=640 height=159
+src="twovariabledata_files/image023.png"
+alt="A white background with black text&#10;&#10;Description automatically generated"></p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>5. The
+Coefficient of Determination (r )</span></b></p>
+
+<p class=MsoNormal>The coefficient of determination, denoted as r , is a
+measure of how well the regression line explains the variation in the response
+variable. It is the square of the correlation r and represents the proportion
+of variation in y that is explained by x.</p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>6.
+Interpreting Coefficients of the Least-Squares Regression Line</span></b></p>
+
+<p class=MsoNormal>The coefficients include the slope b and the y-intercept a.
+Understanding these coefficients helps us make predictions and understand the
+relationship between the variables.</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal><b>Slope (b):</b> Indicates the change in y for each
+     one-unit increase in x.</li>
+ <li class=MsoNormal><b>y-Intercept (a):</b> Indicates the predicted value of y
+     when x is 0, though sometimes it may not have a logical interpretation.</li>
+</ul>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>7. Sample
+Calculation</span></b></p>
+
+<p class=MsoNormal><img border=0 width=623 height=497
+src="twovariabledata_files/image024.png"
+alt="A screenshot of a test&#10;&#10;Description automatically generated"></p>
+
+<p class=MsoNormal><img border=0 width=648 height=549
+src="twovariabledata_files/image025.png"
+alt="A math equations on a white background&#10;&#10;Description automatically generated"></p>
+
+<p class=MsoNormal><img border=0 width=631 height=532
+src="twovariabledata_files/image026.png"
+alt="A screenshot of a math equation&#10;&#10;Description automatically generated"></p>
+
+<p class=MsoNormal>This indicates that 98% of the variation in test scores is
+explained by the number of hours studied.</p>
+
+<p class=MsoNormal><b><img border=0 width=502 height=408 id="Picture 1"
+src="twovariabledata_files/image027.png"
+alt="A graph with a red line and blue dots&#10;&#10;Description automatically generated"></b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name="_TOPIC_2.9_Analyzing"></a><b><span style='font-size:20.0pt;
+line-height:107%;font-family:"Aptos",sans-serif'>TOPIC 2.9 Analyzing Departures
+from Linearity</span></b></h2>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>Introduction</span></b></p>
+
+<p class=MsoNormal>When analyzing data using linear regression, it s important
+to recognize points that don't follow the general trend. These points can
+affect the overall regression model, leading to inaccurate predictions. In this
+lesson, we will explore how to identify influential points, understand
+outliers, and leverage points, and how to use transformations to improve our
+regression models.</p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>1.
+Identifying Influential Points in Regression</span></b></p>
+
+<p class=MsoNormal><b>Influential Points</b> are data points that, if removed,
+significantly change the result of the regression analysis. These changes could
+affect the slope, y-intercept, or the correlation of the regression line.
+Outliers and high-leverage points are often influential.</p>
+
+<p class=MsoNormal><b>Example:</b></p>
+
+<p class=MsoNormal>Imagine you have the following data set representing the
+relationship between the number of hours studied and test scores:</p>
+
+<table class=MsoNormalTable border=0 cellspacing=3 cellpadding=0>
+ <thead>
+  <tr>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Hours Studied</b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Test Score</b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>1</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>55</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>2</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>60</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>3</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>65</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>4</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>70</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>5</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>75</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>6</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>80</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>20</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>100</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>Here, the point (20, 100) could be an influential point
+because the x-value (20 hours) is much larger than the rest of the data points.</p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>2.
+Understanding Outliers in Regression</span></b></p>
+
+<p class=MsoNormal><b>Outliers</b> are points that do not follow the general
+trend of the data and have a large residual when the Least Squares Regression
+Line (LSRL) is calculated. Residuals are the differences between the observed
+values and the values predicted by the regression line.</p>
+
+<p class=MsoNormal><b>Example:</b></p>
+
+<p class=MsoNormal>If you look at the same data set and plot the regression
+line, the point (20, 100) might be far away from the line, making it an
+outlier. This point will have a large residual because the actual test score is
+much higher than what the model would predict based on the other data points.</p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>3.
+Understanding High-Leverage Points in Regression</span></b></p>
+
+<p class=MsoNormal><b>High-Leverage Points</b> have x-values that are much
+larger or smaller than those of other observations. These points can pull the
+regression line towards them, affecting the overall fit of the model.</p>
+
+<p class=MsoNormal><b>Example:</b></p>
+
+<p class=MsoNormal>In the previous data set, the point (20, 100) is also a
+high-leverage point because the x-value (20) is much higher than the other
+x-values (1-6). This point could strongly influence the slope of the regression
+line.</p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>4.
+Understanding Influential Points in Regression</span></b></p>
+
+<p class=MsoNormal>An <b>Influential Point</b> is any point that, when removed,
+changes the relationship between variables significantly. This change could
+affect the slope, y-intercept, and/or correlation of the regression line.</p>
+
+<p class=MsoNormal><b>Real-World Example:</b></p>
+
+<p class=MsoNormal>Imagine you're analyzing the relationship between
+advertising spending and sales revenue for a company. Most data points show
+that as advertising spending increases, so does sales revenue. However, one
+data point represents a situation where a significant amount was spent on a
+campaign, but the sales did not increase as expected. This point could be an
+influential point, especially if it drastically changes the regression line
+when removed.</p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>5.
+Calculating a Predicted Response Using a Least-Squares Regression Line for a
+Transformed Data Set</span></b></p>
+
+<p class=MsoNormal>Transforming data can help in fitting a more appropriate
+model when the original data does not follow a linear trend.</p>
+
+<p class=MsoNormal><b>Example:</b></p>
+
+<p class=MsoNormal>Suppose we have the following data set:</p>
+
+<table class=MsoNormalTable border=0 cellspacing=3 cellpadding=0>
+ <thead>
+  <tr>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>X (Explanatory Variable)</b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Y (Response Variable)</b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>1</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>2</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>2</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>4</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>3</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>8</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>4</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>16</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>5</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>32</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>Here, the relationship between X and Y is exponential. By
+taking the natural logarithm of Y, we can transform the data to make it linear.</p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>6.
+Transformations to Improve Linearity</span></b></p>
+
+<p class=MsoNormal>By transforming variables, such as taking the natural
+logarithm of each value of the response variable or squaring each value of the
+explanatory variable, we can create transformed data sets that may better fit a
+linear model.</p>
+
+<p class=MsoNormal><b>Example:</b></p>
+
+<p class=MsoNormal>Using the previous data, we can create a new data set by
+taking the logarithm of Y:</p>
+
+<table class=MsoNormalTable border=0 cellspacing=3 cellpadding=0>
+ <thead>
+  <tr>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>X (Explanatory Variable)</b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>log(Y) (Transformed Response Variable)</b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>1</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>0.30</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>2</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>0.60</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>3</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>0.90</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>4</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>1.20</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>5</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>1.50</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>Now, the data follows a more linear pattern.</p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>7.
+Interpreting Residual Plots After Transformation</span></b></p>
+
+<p class=MsoNormal>After transforming data, we can analyze residual plots to
+determine if the transformation made the model more appropriate.</p>
+
+<p class=MsoNormal><b>Graph:</b></p>
+
+<p class=MsoNormal>Below is a graph that shows the original data points, the
+regression line before transformation, and the transformed regression line.</p>
+
+<p class=MsoNormal>In this graph, the residuals for the transformed model are
+more randomly distributed, indicating a better fit.</p>
+
+<p class=MsoNormal><img border=0 width=423 height=341 id="Picture 12"
+src="twovariabledata_files/image028.png" alt="Scatter Plot with Regression Line"><img
+border=0 width=423 height=337 id="Picture 13"
+src="twovariabledata_files/image029.png" alt="Scatter Plot with Regression Line"></p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;line-height:107%'>Free
+Response Problem</span></b></p>
+
+<p class=MsoNormal><b>Problem:</b></p>
+
+<p class=MsoNormal>You have the following data set representing the number of
+hours spent on social media per day and the resulting productivity score out of
+100:</p>
+
+<table class=MsoNormalTable border=0 cellspacing=3 cellpadding=0>
+ <thead>
+  <tr>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Hours on Social Media</b></p>
+   </td>
+   <td style='padding:.75pt .75pt .75pt .75pt'>
+   <p class=MsoNormal><b>Productivity Score</b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>1</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>90</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>2</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>85</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>3</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>75</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>4</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>65</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>5</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>60</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>6</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>55</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>15</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>50</p>
+  </td>
+ </tr>
+</table>
+
+<ol style='margin-top:0in' start=1 type=1>
+ <li class=MsoNormal>Identify any outliers, high-leverage points, and
+     influential points in the data set.</li>
+ <li class=MsoNormal>Transform the data set using the natural logarithm of the
+     productivity score and plot the new data.</li>
+ <li class=MsoNormal>Calculate the regression line for the transformed data and
+     compare it with the original regression line.</li>
+ <li class=MsoNormal>Discuss whether the transformation improved the model and
+     explain why.</li>
+</ol>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p class=MsoNormal>This reading material should help you understand how to
+identify and deal with influential points, outliers, and high-leverage points
+in regression analysis. By transforming data, you can often create more
+appropriate models that better predict outcomes.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8607681845167073"
+        crossorigin="anonymous"></script>
+        <!-- tan-apcsa -->
+        <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-8607681845167073"
+        data-ad-slot="4753972224"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    <div id="footer"></div> 
+    <script src="https://girlwhodoesai.github.io/headerfooter.js"></script>
+</body>
+
+</html>
